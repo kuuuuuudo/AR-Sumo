@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: r
+  mTrackableName: dd
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Res_OT.xml
@@ -343,7 +343,7 @@ MonoBehaviour:
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1425, y: 0.095, z: 0.095}
-  mPreviewImage: {fileID: 2800000, guid: 865869a93ef740da9eed1dfa1ef3f923, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 1cb24b99bb5b4d3b9007b73eeb56e309, type: 3}
   mLength: 0.1425
   mWidth: 0.095
   mHeight: 0.095
