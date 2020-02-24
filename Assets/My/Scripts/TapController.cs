@@ -18,44 +18,44 @@ public class TapController : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             Rigidbody rb = this.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 0.3f);  // 力を加える
-            Debug.Log(rb);
+            float xr = Random.Range(1.0f, 9.0f);
+            float zr = Random.Range(1.0f, 9.0f);
+
+            Debug.Log(xr);
+
+            float x = xr / 100.0f;
+            float z = zr / 100.0f;
+
+            Debug.Log(x);
+
+            int xm = Random.Range(0, 2);
+            int zm = Random.Range(0, 2);
+
+            if (xm == 0) { x *= -1.0f; }
+            if (zm == 0) { z *= -1.0f; }
+
+            Debug.Log(x);
+
+            rb.AddForce(x, 0.2f, z, ForceMode.Impulse);  // 力を加える
         }
 
-        if (OnTouchDown())
+        if (Input.touchCount > 0)
         {
-
-        }
-    }
-
-    //スマホ向け そのオブジェクトがタッチされていたらtrue（マルチタップ対応）
-    bool OnTouchDown()
-    {
-        // タッチされているとき
-        if (0 < Input.touchCount)
-        {
-            // タッチされている指の数だけ処理
-            for (int i = 0; i < Input.touchCount; i++)
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
             {
-                // タッチ情報をコピー
-                Touch t = Input.GetTouch(i);
-                // タッチしたときかどうか
-                if (t.phase == TouchPhase.Began)
-                {
-                    //タッチした位置からRayを飛ばす
-                    Ray ray = Camera.main.ScreenPointToRay(t.position);
-                    RaycastHit hit = new RaycastHit();
-                    if (Physics.Raycast(ray, out hit))
-                    {
-                        //Rayを飛ばしてあたったオブジェクトが自分自身だったら
-                        if (hit.collider.gameObject == this.gameObject)
-                        {
-                            return true;
-                        }
-                    }
-                }
+                // タッチ開始
+            }
+            else if (touch.phase == TouchPhase.Moved)
+            {
+                // タッチ移動
+            }
+            else if (touch.phase == TouchPhase.Ended)
+            {
+                Rigidbody rb = this.GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * 0.3f);  // 力を加える
+                Debug.Log(rb);
             }
         }
-        return false; //タッチされてなかったらfalse
     }
 }
