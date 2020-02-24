@@ -5,34 +5,25 @@ using UnityEngine;
 public class TapController : MonoBehaviour
 {
 
-    public GameObject target;
-    Rigidbody rb;
-
     // Use this for initialization
     void Start()
     {
-        this.target.AddComponent<Rigidbody>();
-        this.rb = this.target.GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("タップされました");
-            // rigidbodyを取得 
-            this.rb.AddForce(Random.Range(3.0f, 10.0f), 0, Random.Range(3.0f, 10.0f));
-            //this.rb.AddForce(Random.Range(0.0f, 3.0f), 0, Random.Range(0.0f, 3.0f));  // 力を加える
-            //rb.AddForce(Vector3.left * 0.3f, ForceMode.Impulse);
-            //rb.velocity += (Vector3.left * 0.3f) / rb.mass;
+            Rigidbody rb = this.GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * 0.3f);  // 力を加える
             Debug.Log(rb);
         }
 
         if (OnTouchDown())
         {
-            Debug.Log("タップされました");
 
         }
     }
