@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
   <Tracking>
+    <ObjectTarget name="hy" />
+    <ObjectTarget name="ta" />
+    <ObjectTarget name="t" />
+    <ObjectTarget name="tr" />
+    <ObjectTarget name="e" />
+    <ObjectTarget name="mc" />
     <ObjectTarget name="df" />
     <ObjectTarget name="dd" />
     <ObjectTarget name="can" />
