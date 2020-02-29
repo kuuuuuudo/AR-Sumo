@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
   <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T10:30:23Z" name="hy" targetId="4a3cb92c6707459db2745fcc022e4f26" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T09:27:38Z" name="ta" targetId="210d7af1eede4b1db2a49be8ebcf4413" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T09:42:03Z" name="t" targetId="d0a7cc287e6b4b74a4bf003965f78cc2" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T10:12:34Z" name="tr" targetId="b7003d92074e4581892bdd7c8c671847" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T10:04:17Z" name="e" targetId="f8fc8bb1f59744e3b31b64ef281e121a" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-29T10:26:03Z" name="mc" targetId="736c279d06ed477ab4e1f965a9e8727c" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-11T14:10:30Z" name="df" targetId="0f28baa22b47488586aadd26266dd7a1" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-10T13:21:39Z" name="dd" targetId="0216e24f909742a996c9d57e805a8c9a" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-02-06T15:31:38Z" name="can" targetId="4c2519469ccd4d67b7da919d047f4beb" version="2.0" />
