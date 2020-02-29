@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleButton : MonoBehaviour
 {
 
     public GameObject player,enemy,yuka;
     Rigidbody playerRb,enemyRb,yukaRb;
+    public Text text;
+    public GameObject btn;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,6 @@ public class BattleButton : MonoBehaviour
         playerRb.isKinematic = false;
         enemyRb.isKinematic = false;
         yukaRb.isKinematic = false;
+        btn.SetActive(false);
     }
-
 }
